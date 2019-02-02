@@ -1,0 +1,242 @@
+body{
+    background: #222;
+}
+body::-webkit-scrollbar{ width: 0 !important }
+
+div > img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+div > a img{
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
+}
+
+.container{
+    padding: 6px;
+    margin: 70px 0 70px 0;
+    background: #ddd;
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 98vw;
+    height: 75vh;
+}
+
+.blueHonda{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.honda{
+    grid-column: 5/7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.tag{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.dollar{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.settings{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.contact{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.welcome{
+    background: #08c;
+    color: white;
+    text-align: right;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 14px;
+    padding: 10px 25px 0 0;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.welcome h2{
+    line-height: .3;
+}
+.welcome p{
+    line-height: .3;
+}
+
+.oil{
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+/* minimized screen ------------*/
+@media screen and (max-width: 1300px){
+    .container{
+        width: 97vw;
+        height: 70vh;
+    }
+}
+/* ------------------------------ */
+/* minimized screen ------------*/
+@media screen and (max-width: 1200px){
+    .container{
+        width: 97vw;
+        height: 65vh;
+    }
+}
+/* ------------------------------ */
+/* minimized screen ------------*/
+@media screen and (max-width: 1100px){
+    .container{
+        width: 97vw;
+        height: 60vh;
+    }
+}
+/* ------------------------------ */
+/* iPad Pro --------------------- */
+@media screen and (max-width: 1000px){
+    .container{
+        padding: 6px;
+        margin: 10px 5px 10px 7px;
+        background: #ddd;
+        display: grid;
+        grid-gap: 6px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(8, 1fr);
+        width: 96vw;
+        height: 108vh;
+    }
+
+    .blueHonda{
+        grid-column: 1/-1;
+        grid-row: 1/5;
+    }
+    .honda{
+        grid-column: 1/3;
+        grid-row: 5/7;
+    }
+    .tag{
+        grid-column: 1/2;
+        grid-row: 7/8;
+    }
+    .dollar{
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+    .settings{
+        grid-column: 1/2;
+        grid-row: 8/9;
+    }
+    .contact{
+        grid-column: 2/3;
+        grid-row: 8/9;
+    }
+    .welcome{
+        grid-column: 3/5;
+        grid-row: 5/7;
+    }
+    .oil{
+        grid-column: 3/5;
+        grid-row: 7/9;
+    }
+}
+/* --------------------------------------- */
+/* iPad -----------------------------------*/
+@media screen and (max-width: 768px){
+    .container{
+        width: 94vw;
+        height: 106vh;
+    }
+}
+/* --------------------------------------- */
+/* iPhone 6/7/8 Plus-----------------------*/
+@media screen and (max-width: 414px){
+    .container{
+        width: 94vw;
+        height: 106vh;
+    }
+    .blueHonda{
+        grid-column: 1/-1;
+        grid-row: 1/3;
+    }
+    .honda{
+        grid-column: 1/-1;
+        grid-row: 3/5;
+    }
+    .tag{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    .dollar{
+        grid-column: 3/5;
+        grid-row: 5/6;
+    }
+    .settings{
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+    .contact{
+        grid-column: 3/5;
+        grid-row: 6/7;
+    }
+    .welcome{
+        /* this is not in the mockup so I'm assuming */
+        display: none;
+    }
+    .oil{
+        grid-column: 1/-1;
+        grid-row: 7/9;
+    }
+}
+/* --------------------------------------- */
+/* Pixel 2 XL------------------------------*/
+@media screen and (max-width: 411px){
+    .container{
+        width: 90vw;
+        height: 137vh;
+    }
+}
+/* --------------------------------------- */
+/* iPhone X -------------------------------*/
+@media screen and (max-width: 375px){
+    .container{
+        width: 91vw;
+        height: 130vh;
+        margin: 10px 5px 10px 3px;
+    }
+}
+/* --------------------------------------- */
+/* Galaxy S5 ------------------------------*/
+@media screen and (max-width: 360px){
+    .container{
+        width: 91vw;
+        height: 155vh;
+        margin: 10px 5px 10px 2px;
+    }
+}
+/* --------------------------------------- */
+
